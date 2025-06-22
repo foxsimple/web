@@ -4,7 +4,7 @@
   font-family: 'Arial', sans-serif;         /* 设置字体 */
   background: linear-gradient(to right, #f3fdf4, #d0f0ec);  /* 渐变背景 */
   height: 100vh;                            /* 页面高度占满整个视口 */
-        font-size: 64px;
+        font-size: 32px;
       }
 
     /* 页眉区 */
@@ -12,7 +12,7 @@
       color: rgb(255, 255, 255);
       padding: 10px 0;
       text-align: center;
-      font-size: 32px;
+      font-size: 16px;
     }
     .logo {
       width: 80px;   /* 控制 logo 宽度为 80 像素，可以根据需要修改 */
@@ -26,7 +26,7 @@
       display: flex;        /* 横向排列的关键：使用 flex 布局 */
       justify-content: center; /* 让导航项水平居中 */
       background-color: lightgreen;  /* 设置背景色 */
-      font-size: 32px;
+      font-size: 16px;
     }
 
     .nav li {
@@ -64,7 +64,7 @@
         grid-area: content1;
         background-color: lightblue;  
         width: 90%;
-        padding: 400px;
+        padding: 100px;
         display: flex;
         justify-content: center;
         justify-content: center;     /* 水平居中 */
@@ -76,7 +76,7 @@
         grid-area: content2;
         background-color: lightpink;
         width: 90%;
-        padding: 400px;
+        padding: 100px;
         display: flex;
         justify-content: center;     /* 水平居中 */
         align-items: center;         /* 垂直居中 */
@@ -87,8 +87,8 @@
     aside {
       grid-area: aside;
       background-color: gold;
-      padding: 20px;
-      font-size: 64px;
+      padding: 0;
+      font-size: 32px;
     }
 
     /* 页脚 */
@@ -100,5 +100,5 @@
       position: fixed;
       bottom: 0;
       width: 100%;
-      font-size: 32px;
+      font-size: 16px;
     }
