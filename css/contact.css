@@ -1,0 +1,88 @@
+/* 页面整体样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;         /* 设置字体 */
+  background: linear-gradient(to right, #f3fdf4, #d0f0ec);  /* 渐变背景 */
+  display: flex;
+  justify-content: center;                  /* 页面水平居中 */
+  align-items: center;                      /* 页面垂直居中 */
+  height: 100vh;                            /* 页面高度占满整个视口 */
+}
+
+/* 表单外框样式 */
+.form-wrapper {
+  background-color: #ffffff;                /* 白色背景 */
+  padding: 30px 40px;                       /* 内边距 */
+  border-radius: 12px;                      /* 圆角边框 */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);   /* 阴影效果 */
+  width: 400px;                             /* 固定宽度 */
+}
+
+/* 表单标题样式 */
+.form-wrapper h2 {
+  text-align: center;                       /* 居中 */
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* 每个标签的样式 */
+form label {
+  display: block;                           /* 独占一行 */
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* 输入框、下拉框、文本框统一样式 */
+form input,
+form select,
+form textarea {
+  width: 100%;                              /* 宽度占满父容器 */
+  padding: 10px 12px;                       /* 内边距 */
+  margin-top: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;                   /* 边框颜色 */
+  border-radius: 8px;                       /* 圆角 */
+  box-sizing: border-box;                   /* 包括内边距和边框在内的宽度计算 */
+  transition: border-color 0.3s ease;       /* 聚焦时动画过渡 */
+}
+
+/* 焦点样式：点击输入框时边框颜色变化 */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #66afe9;
+  outline: none;                            /* 去掉默认蓝色边框 */
+}
+
+/* 提交按钮样式 */
+form button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #4CAF50;                /* 按钮绿色背景 */
+  color: white;                             /* 白色文字 */
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;                          /* 鼠标变成小手 */
+  transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时按钮变色 */
+form button:hover {
+  background-color: #45a049;
+}
+
+    /* 页脚 */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 16px;
+    }

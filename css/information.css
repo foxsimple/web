@@ -1,0 +1,76 @@
+/* 页面整体布局 */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e6f9f1, #cde8e1);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin: 0;
+}
+
+/* 表格外层容器 */
+.table-wrapper {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 标题样式 */
+.table-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+/* 表格整体样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 表头样式 */
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+  padding: 14px 18px;
+  font-weight: normal;
+}
+
+/* 内容单元格样式 */
+td {
+  background-color: #f9f9f9;
+  padding: 14px 18px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* 行交替颜色美化 */
+tr:nth-child(even) td {
+  background-color: #f1fdf7;
+}
+
+/* 鼠标悬停高亮一整行 */
+tr:hover td {
+  background-color: #e0f7ec;
+  transition: 0.2s;
+}
+    /* 页脚 */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 16px;
+    }

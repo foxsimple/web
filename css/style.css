@@ -1,0 +1,104 @@
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;         /* 设置字体 */
+  background: linear-gradient(to right, #f3fdf4, #d0f0ec);  /* 渐变背景 */
+  height: 100vh;                            /* 页面高度占满整个视口 */
+        font-size: 64px;
+      }
+
+    /* 页眉区 */
+    header {
+      color: rgb(255, 255, 255);
+      padding: 10px 0;
+      text-align: center;
+      font-size: 32px;
+    }
+    .logo {
+      width: 80px;   /* 控制 logo 宽度为 80 像素，可以根据需要修改 */
+      height: auto;  /* 自动按比例缩放高度 */
+      vertical-align: middle;  /* 垂直居中对齐导航栏 */
+    } 
+    .nav {
+      list-style: none;     /* 去掉圆点 */
+      padding: 0;
+      margin: 0;
+      display: flex;        /* 横向排列的关键：使用 flex 布局 */
+      justify-content: center; /* 让导航项水平居中 */
+      background-color: lightgreen;  /* 设置背景色 */
+      font-size: 32px;
+    }
+
+    .nav li {
+      margin: 0 auto;       /* 每个导航项左右间距 */
+    }
+
+    .nav a {
+     text-decoration: none; /* 去掉下划线 */
+      color: white;          /* 设置文字颜色为白色 */
+      padding: 10px 15px;
+      display: block;        /* 让 a 标签占满 li 宽度，便于点击 */
+   }
+
+    .nav a:hover {
+      background-color: #555;  /* 鼠标悬停时改变背景色 */
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      grid-template-areas: "aside main";
+      min-height: calc(100vh - 160px);
+    }
+    /* 主体区 */
+    main {
+      grid-area: main;
+      display: grid;
+      grid-template-rows: repeat(2,1fr); /*设置两行,均等分配*/
+      grid-template-areas:/*为区域命名*/
+      "content1"
+      "content2";
+      justify-items: center;
+
+    }
+      .content1{
+        grid-area: content1;
+        background-color: lightblue;  
+        width: 90%;
+        padding: 400px;
+        display: flex;
+        justify-content: center;
+        justify-content: center;     /* 水平居中 */
+        align-items: center;         /* 垂直居中 */
+        text-align: center;          /* 多行文字也水平居中 */
+        height: 200px;               /* 给定高度才能垂直居中 */
+      }
+      .content2{
+        grid-area: content2;
+        background-color: lightpink;
+        width: 90%;
+        padding: 400px;
+        display: flex;
+        justify-content: center;     /* 水平居中 */
+        align-items: center;         /* 垂直居中 */
+        text-align: center;          /* 多行文字也水平居中 */
+        height: 200px;               /* 给定高度才能垂直居中 */
+      }
+    /* 边栏 */
+    aside {
+      grid-area: aside;
+      background-color: gold;
+      padding: 20px;
+      font-size: 64px;
+    }
+
+    /* 页脚 */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 32px;
+    }
